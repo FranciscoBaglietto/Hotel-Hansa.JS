@@ -1,0 +1,32 @@
+.header{
+    
+    .navbar{
+        
+        .container-fluid{
+            
+            .img_logo{
+                width: 100px;
+                border: solid 2px black;
+                border-radius: 20px 0px;
+                padding-bottom: 10px;
+            }
+
+            .navbar_contenedor{
+
+                .navbar-nav{
+
+                    .nav-item{
+
+                        .nav-link{
+                            color: white;
+                            font-size: 24px;
+                            margin: 0 10px;
+                            font-family: karla-regular;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

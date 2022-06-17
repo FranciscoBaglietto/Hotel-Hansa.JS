@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: karla-bold;
+  src: url("/tipografia/KARLA-BOLD.TTF"); }
+
+@font-face {
+  font-family: karla-italic;
+  src: url("/tipografia/KARLA-ITALIC.TTF"); }
+
+@font-face {
+  font-family: karla-regular;
+  src: url("/tipografia/KARLA-REGULAR.TTF"); }
+
+.header .navbar .container-fluid .img_logo {
+  width: 100px;
+  border: solid 2px black;
+  border-radius: 20px 0px;
+  padding-bottom: 10px; }
+
+.header .navbar .container-fluid .navbar_contenedor .navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  font-family: karla-regular; }
