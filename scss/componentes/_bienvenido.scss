@@ -1,0 +1,37 @@
+#bienvenidos{
+    background-color: #ee76840a ;
+    
+    
+    .contenedor_bienvenido{
+
+        .row{
+
+            .bienvenidos__textos{
+                padding-top: 50px;
+                padding-bottom: 50px;
+
+                .bienvenido__text1{
+                    font-family: karla-regular;
+                    font-size: 24px;
+                    color: #818262;
+                }
+                .bienvenido__text2{
+                    font-family: karla-bold;
+                    font-size: 36px;
+                    color: #818262;
+                }
+                .bienvenido__text3{
+                    font-family: karla-regular;
+                    font-size: 16px;
+                    color: #818262;
+                }
+            }
+            .bienvenido__imagenes{
+                padding-top: 50px;
+                padding-bottom: 50px;
+             
+            }
+
+        }
+    }
+}

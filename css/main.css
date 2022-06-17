@@ -31,3 +31,24 @@
   object-fit: cover;
   object-position: center center;
   width: 100%; }
+
+#bienvenidos {
+  background-color: #ee76840a; }
+  #bienvenidos .contenedor_bienvenido .row .bienvenidos__textos {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    #bienvenidos .contenedor_bienvenido .row .bienvenidos__textos .bienvenido__text1 {
+      font-family: karla-regular;
+      font-size: 24px;
+      color: #818262; }
+    #bienvenidos .contenedor_bienvenido .row .bienvenidos__textos .bienvenido__text2 {
+      font-family: karla-bold;
+      font-size: 36px;
+      color: #818262; }
+    #bienvenidos .contenedor_bienvenido .row .bienvenidos__textos .bienvenido__text3 {
+      font-family: karla-regular;
+      font-size: 16px;
+      color: #818262; }
+  #bienvenidos .contenedor_bienvenido .row .bienvenido__imagenes {
+    padding-top: 50px;
+    padding-bottom: 50px; }
