@@ -1,29 +1,36 @@
-#servicios{
-    background-color: #ee76840a ;
+#servicios {
+    background-color: #ee76840a;
+    padding-top: 5rem;
 
-    .contenedor__servicios{
+    .contenedor__servicios {
 
-        .row{
-            .servicios__textos{
-                padding-top: 50px;
-                margin-bottom: -18rem;
-                
+        .row {
 
-                .servicio--text1{
-                    font-family: karla-regular;
-                    font-size: 24px;
-                    color: #818262;
-                }
-                .servicio--img1{
-                    width: 30rem;
-                    margin-top: -15rem;
-                    margin-right: -6rem;
-                }
+
+            .servicio--text1 {
+                font-family: karla-regular;
+                font-size: 24px;
+                color: #818262;
             }
-            .contenedor__nestros--serv{
-                grid-template-columns: 1fr 1fr 1fr;
+
+            .servicio__img{
+                position: relative;
+
+                .servicio--img1 {
+                    width: 500px;
+                position: absolute;
+                right: 10rem;
+                top: -380px;
+                }
+
+            }
+
+
+            .contenedor__nestros--serv {
+                
                 grid-template-rows: 1fr 1fr;
-                margin-left: 5rem;
+                grid-template-columns: 440px 440px 440px;
+                
             }
 
         }
