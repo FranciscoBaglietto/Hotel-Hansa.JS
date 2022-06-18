@@ -69,7 +69,32 @@
   #servicios .contenedor__servicios .row .contenedor__nestros--serv {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin-left: 10rem; }
+    margin-left: 5rem; }
+
+#habitaciones {
+  background-color: #ee76840a;
+  overflow: hidden;
+  padding-top: 4rem;
+  height: 70vh; }
+  #habitaciones .habitaciones__textos .habitacion--text1 {
+    font-family: karla-regular;
+    font-size: 24px;
+    color: #818262; }
+  #habitaciones .habitaciones__textos .habitacion--text2 {
+    font-family: karla-regular;
+    font-size: 32px;
+    color: #818262; }
+  #habitaciones .habitaciones__rayas {
+    position: relative; }
+    #habitaciones .habitaciones__rayas .rayas__habitacion {
+      width: 500px;
+      position: absolute;
+      left: -10rem;
+      top: -380px; }
+  #habitaciones .habitaciones__rayas .rayas2__habitacion {
+    width: 500px;
+    position: absolute;
+    right: -10rem; }
 
 #trayectoria {
   background-image: url("./../../imagenes/LANDING HANSA-10.png");

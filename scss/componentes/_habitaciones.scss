@@ -1,0 +1,40 @@
+#habitaciones{
+    background-color: #ee76840a;
+    overflow: hidden;
+    padding-top: 4rem;
+    height: 70vh;
+    .habitaciones__textos{
+
+        .habitacion--text1{
+            font-family: karla-regular;
+            font-size: 24px;
+            color: #818262;
+        }
+        .habitacion--text2{
+            font-family: karla-regular;
+            font-size: 32px;
+            color: #818262;
+        }
+
+    }
+    .habitaciones__rayas{
+        position: relative;
+
+        .rayas__habitacion{
+            width: 500px;
+            position: absolute;
+            left: -10rem;
+            top: -380px;
+        }
+    }
+    .habitaciones__rayas{
+
+        .rayas2__habitacion{
+            width: 500px;
+            position: absolute;
+            right: -10rem;
+        }
+    }
+
+
+}
