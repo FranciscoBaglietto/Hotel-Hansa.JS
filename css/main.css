@@ -52,3 +52,39 @@
   #bienvenidos .contenedor_bienvenido .row .bienvenido__imagenes {
     padding-top: 50px;
     padding-bottom: 50px; }
+
+#servicios {
+  background-color: #ee76840a; }
+  #servicios .contenedor__servicios .row .servicios__textos {
+    padding-top: 50px;
+    margin-bottom: -18rem; }
+    #servicios .contenedor__servicios .row .servicios__textos .servicio--text1 {
+      font-family: karla-regular;
+      font-size: 24px;
+      color: #818262; }
+    #servicios .contenedor__servicios .row .servicios__textos .servicio--img1 {
+      width: 30rem;
+      margin-top: -15rem;
+      margin-right: -6rem; }
+  #servicios .contenedor__servicios .row .contenedor__nestros--serv {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 10rem; }
+
+#trayectoria {
+  background-image: url("./../../imagenes/LANDING HANSA-10.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem; }
+  #trayectoria .contenedor__trayectoria .row .trayectoria__textos {
+    flex-direction: column; }
+    #trayectoria .contenedor__trayectoria .row .trayectoria__textos .img--trayectoria {
+      width: 30%; }
+    #trayectoria .contenedor__trayectoria .row .trayectoria__textos .trayectoria--texto1 {
+      font-family: karla-regular;
+      font-size: 24px;
+      color: white; }
+
+#footer {
+  background-color: #818262; }

@@ -1,0 +1,25 @@
+#trayectoria{
+    background-image: url("./../../imagenes/LANDING\ HANSA-10.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+
+    .contenedor__trayectoria{
+
+        .row{
+            .trayectoria__textos{
+                flex-direction: column;
+
+                .img--trayectoria{
+                    width: 30%;
+                }
+                .trayectoria--texto1{
+                    font-family: karla-regular;
+                    font-size: 24px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -99,18 +99,23 @@
 
     <!-- Servicios -->
     <section id="servicios">
-        <div class="containter">
+
+        <div class="contenedor__servicios containter">
+
             <div class="row">
-                <div class="d-flex">
-                    <div class="col">
-                        <p>NUESTROS SERVICIOS</p>
+
+                <div class="servicios__textos d-flex">
+
+                    <div class="col text-end">
+                        <p class="servicio--text1">NUESTROS SERVICIOS</p>
                     </div>
-                    <div class="col">
-                        <img src="./imagenes/rayas.png" alt="Rayas" width="100">
+
+                    <div class="col text-end">
+                        <img class="servicio--img1" src="./imagenes/rayas.png" alt="Rayas">
                     </div>
                 </div>
 
-                <div>
+                <div class="contenedor__nestros--serv d-grid">
                     <div>
                         <img src="./imagenes/ubicacion.png" alt="Ubicacion" width="100">
                         <p>UBICACIÓN</p>
@@ -175,20 +180,23 @@
 
     <!-- Habitaciones -->
     <section id="habitaciones">
+
         <div class="container">
+
             <div class="row">
-                <div class="d-flex">
-                    <div>
-                        <img src="./imagenes/rayas.png" alt="Rayas" width="100">
-                    </div>
-                    <div>
-                        <p>HABITACIONES</p>
-                        <p>Elegí tu mejor opción</p>
-                    </div>
+                <div>
+                    <img src="./imagenes/rayas.png" alt="Rayas" width="100">
                 </div>
+
+                <div class="d-flex text-center">
+                        <p>HABITACIONES</p>
+                        <p>Elegí tu mejor opción</p>                    
+                </div>
+
                 <div>
                     <p>Habitacionés cards simple, doble y triple</p>
                 </div>
+
                 <div>
                     <img src="./imagenes/rayas.png" alt="Rayas" width="100">
                 </div>
@@ -199,39 +207,55 @@
 
     <!-- Trayectoria -->
     <section id="trayectoria">
-        <div class="container">
+
+        <div class="container contenedor__trayectoria">
+
             <div class="row">
-                <div>
-                    <img src="./imagenes/trayectoria.png" alt="Trayectoria" width="100">
-                    <p>¡Más de 10 años justo a vos!</p>
-                    <p>HACE TU RESERVA AHORA</p>
+
+                <div class="trayectoria__textos d-flex text-center ">
+                    <div>
+                        <img class="img--trayectoria" src="./imagenes/trayectoria.png" alt="Trayectoria" >
+                    </div>
+                    <p class="trayectoria--texto1">HACE TU RESERVA AHORA</p>
                     <button>Contactanos</button>
                 </div>
             </div>
         </div>
+    </section>
 
         <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="row">
+        <footer id="footer">
 
-                    <div>
-                        <div>
-                            <img src="./imagenes/tele.png" alt="Telefono" width="40">
-                        </div>
-                        <div>
-                            <p>Celular:(2342) 560022</p>
-                        </div>
+            <div class="container contenedor__footer">
+
+                <div class="row ">
+
+                    <div class="text-center">
+                        <img class="img__footer" src="./imagenes/logo.png" alt="Logo" width="100">
                     </div>
-                    <div>
-                        <div>
-                            <img src="./imagenes/logoUbicacion.png" alt="Ubicacion" width="100">
+
+                    
+
+                        <div class="d-flex ">
+                            <div>
+                                <img src="./imagenes/tele.png" alt="Telefono" width="40">
+                            </div>
+                            <div class="d-flex">
+                                <p>Celular:(2342) 560022</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>Alameda 205 y Calle 302, Villa Gesell</p>
+                        
+                        <div class="d-flex ">
+                            <div>
+                                <img src="./imagenes/logoUbicacion.png" alt="Ubicacion" width="100">
+                            </div>
+                            <div>
+                                <p>Alameda 205 y Calle 302, Villa Gesell</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="redes d-flex">
+                        
+
+                    <div class="redes d-flex ">
                         <div>
                             <a href="https://www.facebook.com/HansaHotelVG/"><img src="./imagenes/facebook.png"
                                     alt="facebook" width="40"></a>
@@ -246,7 +270,6 @@
             </div>
         </footer>
 
-    </section>
 
     <!-- JavaScript -->
     <script src="./main.js"></script>
