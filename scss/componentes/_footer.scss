@@ -5,6 +5,33 @@
 
         .row{
 
+            .img__footer{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .contenedor__telefono{
+                height: 3.1rem;
+                .telefono__texto{
+                    font-family: karla-regular;
+                    color: white;
+                    font-size: 22px;
+                    margin-top: 1.8rem;
+                    margin-left: -1rem;
+                }
+            }
+            .contenedor__ubicacion{
+
+                .ubicacion__texto{
+                    font-family: karla-regular;
+                    color: white;
+                    font-size: 22px;
+                    margin-top: 1.9rem;
+                    margin-left: -1rem;
+                }
+            }
         }
+
     }
+
 }
