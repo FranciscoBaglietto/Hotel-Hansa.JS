@@ -4,15 +4,15 @@
 
 @font-face {
   font-family: karla-bold;
-  src: url("/tipografia/KARLA-BOLD.TTF"); }
+  src: url("../tipografia/KARLA-BOLD.TTF"); }
 
 @font-face {
   font-family: karla-italic;
-  src: url("/tipografia/KARLA-ITALIC.TTF"); }
+  src: url("../tipografia/KARLA-ITALIC.TTF"); }
 
 @font-face {
   font-family: karla-regular;
-  src: url("/tipografia/KARLA-REGULAR.TTF"); }
+  src: url("../tipografia/KARLA-REGULAR.TTF"); }
 
 .header .navbar {
   color: #818262; }
