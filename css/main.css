@@ -124,7 +124,7 @@
     right: -10rem; }
 
 #trayectoria {
-  background-image: url("./../../imagenes/LANDING HANSA-10.png");
+  background-image: url("./../imagenes/LANDING HANSA-10.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
