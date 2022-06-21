@@ -4,15 +4,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 30rem;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
 
     .contenedor__trayectoria{
-
+        
         .row{
             .trayectoria__textos{
                 flex-direction: column;
 
                 .img--trayectoria{
                     width: 30%;
+                    
                 }
                 .trayectoria--texto1{
                     font-family: karla-regular;
