@@ -21,7 +21,7 @@
             <div class="container-fluid">
 
 
-                <a class="navbar-brand " href="#"><img class="img_logo" src="./imagenes/logo.png" alt="Logo"></a>
+                <a class="navbar-brand " href="#home"><img class="img_logo" src="./imagenes/logo.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,13 +31,13 @@
                 <div class="navbar_contenedor collapse navbar-collapse justify-content-center " id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Servicios</a>
+                            <a class="nav-link active" href="#servicios">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Habitaciones</a>
+                            <a class="nav-link active" href="#habitaciones">Habitaciones</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Contacto</a>
@@ -48,10 +48,22 @@
         </nav>
     </header>
 
+    <section id="registro">
+
+        <div class="container">
+
+            <form class="row">
+
+                
+            </form>
+        </div>
+
+    </section>
+
 
     <!-- Home -->
     <section id="home">
-        <img src="./imagenes/imagenPrincipal.jpg" alt="">
+        <img src="./imagenes/imagenPrincipal.jpg" alt="Home">
     </section>
 
     <!-- Bienvenidos -->
@@ -206,8 +218,43 @@
 
 
 
-                <div>
-                    <p>Habitacionés cards simple, doble y triple</p>
+                <div class="row cards__habitaciones">
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 20rem;">
+                            <img src="./imagenes/habitacionSimple.jpg" class="card-img-top" alt="Habitacion Simple">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Habitación Simple</h5>
+                                <p>
+                                    Precio por noche $100
+                                </p>
+                                <a href="#" class="btn btn-primary">Alquilar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 20rem;">
+                            <img src="./imagenes/habitacionDoble.jpg" class="card-img-top" alt="Habitacion Doble">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Habitación Doble</h5>
+                                <p>
+                                    Precio por noche $200
+                                </p>
+                                <a href="#" class="btn btn-primary">Alquilar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card " style="width: 20rem;">
+                            <img src="./imagenes/habitacionTriple.jpg" class="card-img-top" alt="Habitacion Triple">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Habitación Triple</h5>
+                                <p>
+                                    Precio por noche $300
+                                </p>
+                                <a href="#" class="btn btn-primary">Alquilar</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 

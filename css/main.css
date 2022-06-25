@@ -103,7 +103,7 @@
   background-color: #ee76840a;
   overflow: hidden;
   padding-top: 4rem;
-  height: 70vh; }
+  padding-bottom: 10rem; }
   #habitaciones .habitaciones__textos .habitacion--text1 {
     font-family: karla-regular;
     font-size: 24px;
@@ -119,10 +119,15 @@
       position: absolute;
       left: -10rem;
       top: -380px; }
+  #habitaciones .cards__habitaciones {
+    padding-top: 3rem; }
+    #habitaciones .cards__habitaciones .card {
+      box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568); }
   #habitaciones .habitaciones__rayas .rayas2__habitacion {
     width: 500px;
     position: absolute;
-    right: -10rem; }
+    right: 0;
+    top: -15rem; }
 
 #trayectoria {
   background-image: url("./../imagenes/LANDING HANSA-10.png");
