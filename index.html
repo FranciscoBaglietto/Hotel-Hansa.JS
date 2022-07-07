@@ -48,22 +48,37 @@
         </nav>
     </header>
 
+
+    <!-- Home -->
+    <section id="home">
+        <img src="./imagenes/imagenPrincipal.jpg" alt="Home">
+    </section>
+
+    <!-- Registro -->
     <section id="registro">
 
         <div class="container">
 
-            <form class="row">
+            <form class="row d-flex" >
+                <div class="col-xl-4">
+                    <label for="check-in">Entrada</label>
+                    <input type="date">
+                </div>
+                <div class="col-xl-4">
+                    <label for="check-out">Salida</label>
+                    <input type="date">
+                </div>
+                <div class="col-xl-2">
+                    <label for="check-out">Huesped</label>
+                </div>
+                <div class="col-xl-2">
+                    <a href="#"> <button>Buscar</button></a>
+                </div>
 
                 
             </form>
         </div>
 
-    </section>
-
-
-    <!-- Home -->
-    <section id="home">
-        <img src="./imagenes/imagenPrincipal.jpg" alt="Home">
     </section>
 
     <!-- Bienvenidos -->
@@ -340,6 +355,7 @@
         crossorigin="anonymous"></script>
         
     <!-- JavaScript -->
+    <script src="./stock.js"></script>
     <script src="./main.js"></script>        
 </body>
 
