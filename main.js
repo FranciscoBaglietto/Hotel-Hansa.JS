@@ -11,18 +11,16 @@ function renderizarHabitaciones() {
         let habitacionHTML = `
         <div>
         <div class= "card">
-            <img src="$(p.img)" class="card-img-top" alt="Habitacion Doble">
+            <img src="${p.img}" class="card-img-top" alt="Habitacion Doble ">
             <div class="card-body text-center">
-                <h5 class="card-title">$(p.habitacion)</h5>
-                <p>$(p.precio)</p>
+                <h5 class="card-title">${p.habitacion}</h5>
+                <p>${p.precio}</p>
             </div>
-            <button class="btn" onClick="agregarProductoAlCarrito($(p.id))>Añadir al carrito</button>
+            <button class="btn btn-primary" onclick="agregarProductoAlCarrito(${p.id})">Añadir al carrito</button>
         </div>
         </div>
         `
         tienda.innerHTML += habitacionHTML;
-        
-
     })
 
 };
@@ -49,5 +47,7 @@ function agregarProductoAlCarrito() {
 function renderizarCarrito() {
     
     let carritoHTML = document.getElementById("carrito");
-    console.log(carritoHTML)
+    console.log(carritoHTML);
+
+
 }
