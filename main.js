@@ -34,11 +34,16 @@ function agregarProductoAlCarrito() {
     let habitacionEnCarrito = carrito.find(hab => hab.id === id);//si hay habitacione en carrito
 
     if(habitacionEnCarrito){
-        habitacionEnCarrito++
+
+        habitacionEnCarrito.cantidad++;
+
+        console.log(carrito);
 
     }else{
         habitacion.cantidad = 1;
         carrito.push(habitacion);
+
+        console.log(carrito);
     }
 
     renderizarCarrito()
@@ -49,5 +54,22 @@ function renderizarCarrito() {
     let carritoHTML = document.getElementById("carrito");
     console.log(carritoHTML);
 
+    carrito.forEach((p, id)=>{
+
+        let htmlcarrito = `
+        <div class="d-flex">
+        <div class= "card">
+            <img src="${p.img}" class="card-img-top" alt="Habitacion Doble ">
+            <div class="card-body text-center">
+                <h5 class="card-title">${p.habitacion}</h5>
+                <p>${p.precio}</p>
+                <p>${p.cantidad}</p>
+                <button class="btn btn-primary" onclick="eliminarProductoAlCarrito(${p.id})">Eliminar</button>
+            </div>
+        </div>
+        </div>
+        `
+        carritoHTML.innerHTML = htmlcarrito;
+    })
 
 }
