@@ -54,9 +54,11 @@ function renderizarCarrito() {
     let carritoHTML = document.getElementById("carrito");
     console.log(carritoHTML);
 
+    let htmlcarrito = " ";
+
     carrito.forEach((p, id)=>{
 
-        let htmlcarrito = `
+        htmlcarrito += `
         <div class="d-flex">
         <div class= "card">
             <img src="${p.img}" class="card-img-top" alt="Habitacion Doble ">
@@ -69,7 +71,18 @@ function renderizarCarrito() {
         </div>
         </div>
         `
-        carritoHTML.innerHTML = htmlcarrito;
+        
     })
+    carritoHTML.innerHTML = htmlcarrito;
 
+}
+
+function eliminarProductoAlCarrito() {
+    
+    carrito[id].cantidad--;
+
+    if(carrito[0].cantidad === 0){
+        carrito.splice(id, 1);
+    }
+    renderizarCarrito();
 }
