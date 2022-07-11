@@ -1,3 +1,9 @@
+// llamar a Boton para el HTML Habitaciones
+// const btnBuscar = document.getElementById("myButton").onclick = 
+// function () {
+//     location.href= "./paginas/habitaciones.html"
+// }
+
 const carrito = [];
 
 let total = 0;
@@ -27,7 +33,7 @@ function renderizarHabitaciones() {
 
 renderizarHabitaciones();
 
-function agregarProductoAlCarrito() {
+function agregarProductoAlCarrito(id) {
 
     let habitacion = habitaciones.find(hab => hab.id === id);
 
@@ -77,7 +83,7 @@ function renderizarCarrito() {
 
 }
 
-function eliminarProductoAlCarrito() {
+function eliminarProductoAlCarrito(id) {
     
     carrito[id].cantidad--;
 
