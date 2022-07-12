@@ -19,8 +19,8 @@ function renderizarHabitaciones() {
         <div class= "card">
             <img src=${p.img} class="card-img-top" alt="Habitacion Doble ">
             <div class="card-body text-center">
-                <h5 class="card-title">${p.habitacion}</h5>
-                <p>${p.precio}</p>
+                <h5 class="card-title">Habitacion ${p.habitacion}</h5>
+                <p>$ ${p.precio}</p>
             </div>
             <button class="btn btn-primary" onclick="agregarProductoAlCarrito(${p.id})">Añadir al carrito</button>
         </div>
@@ -69,9 +69,9 @@ function renderizarCarrito() {
         <div class= "card">
             <img src=${p.img} class="card-img-top" alt="Habitacion Doble ">
             <div class="card-body text-center">
-                <h5 class="card-title">${p.habitacion}</h5>
-                <p>${p.precio}</p>
-                <p>${p.cantidad}</p>
+                <h5 class="card-title"> Habitacion ${p.habitacion}</h5>
+                <p>$ ${p.precio}</p>
+                <p>Cantidad: ${p.cantidad}</p>
                 <button class="btn btn-primary" onclick="eliminarProductoAlCarrito(${p.id})">Eliminar</button>
             </div>
         </div>
@@ -84,11 +84,14 @@ function renderizarCarrito() {
 }
 
 function eliminarProductoAlCarrito(id) {
-    
-    carrito[id].cantidad--;
 
-    if(carrito[1].cantidad === 0){
-        carrito.splice(id, 1);
-    }
+    let habitacionEliminar =  carrito.find((hab) => hab.id === id);
+
+    console.log(habitacionEliminar);
+
+    if(habitacionEliminar){
+        habitacionEliminar.cantidad--;
+    } 
+
     renderizarCarrito();
 }
