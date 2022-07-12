@@ -6,7 +6,7 @@
 
 const carrito = [];
 
-let total = 0;
+
 
 function renderizarHabitaciones() {
     
@@ -67,7 +67,6 @@ function renderizarCarrito() {
         htmlcarrito += `
         <div class="d-flex">
         <div class= "card">
-            <img src=${p.img} class="card-img-top" alt="Habitacion Doble ">
             <div class="card-body text-center">
                 <h5 class="card-title"> Habitacion ${p.habitacion}</h5>
                 <p>$ ${p.precio}</p>
@@ -94,4 +93,18 @@ function eliminarProductoAlCarrito(id) {
     } 
 
     renderizarCarrito();
+}
+
+
+function calcularTotal() {
+
+    let total = 0;
+    
+    carrito.forEach((p)=>{
+        total += p.cantidad * p.precio
+    })
+    console.log(total);
+
+    const t = document.getElementById("total")
+    t.innerHTML = <h5>`$${total}`</h5>
 }
