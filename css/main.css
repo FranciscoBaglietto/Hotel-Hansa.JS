@@ -166,3 +166,19 @@
     font-size: 22px;
     margin-top: 1.9rem;
     margin-left: -1rem; }
+
+#contenedor-habitaciones .card {
+  width: 16rem;
+  margin-bottom: 2rem; }
+  #contenedor-habitaciones .card .card-img-top {
+    width: 100%; }
+
+.contenedor-carrito .carrito-titulo {
+  font-size: 2rem;
+  border: 1px black solid;
+  width: 20rem; }
+  .contenedor-carrito .carrito-titulo #carrito .card {
+    width: 16rem;
+    margin-bottom: 2rem; }
+    .contenedor-carrito .carrito-titulo #carrito .card .card-img-top {
+      width: 200px; }

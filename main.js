@@ -17,7 +17,7 @@ function renderizarHabitaciones() {
         let habitacionHTML = `
         <div>
         <div class= "card">
-            <img src="${p.img}" class="card-img-top" alt="Habitacion Doble ">
+            <img src=${p.img} class="card-img-top" alt="Habitacion Doble ">
             <div class="card-body text-center">
                 <h5 class="card-title">${p.habitacion}</h5>
                 <p>${p.precio}</p>
@@ -67,7 +67,7 @@ function renderizarCarrito() {
         htmlcarrito += `
         <div class="d-flex">
         <div class= "card">
-            <img src="${p.img}" class="card-img-top" alt="Habitacion Doble ">
+            <img src=${p.img} class="card-img-top" alt="Habitacion Doble ">
             <div class="card-body text-center">
                 <h5 class="card-title">${p.habitacion}</h5>
                 <p>${p.precio}</p>
@@ -87,7 +87,7 @@ function eliminarProductoAlCarrito(id) {
     
     carrito[id].cantidad--;
 
-    if(carrito[0].cantidad === 0){
+    if(carrito[1].cantidad === 0){
         carrito.splice(id, 1);
     }
     renderizarCarrito();

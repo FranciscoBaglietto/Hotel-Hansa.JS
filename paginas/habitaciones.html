@@ -11,15 +11,51 @@
     <title>Alquiler de Habitaciones</title>
 </head>
 <body>
-    
+
+    <header class="header">
+
+        <nav class="navbar navbar-expand-lg bg-secondary">
+
+            <div class="container-fluid">
+
+
+                <a class="navbar-brand " href="#home"><img class="img_logo" src="./../imagenes/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="navbar_contenedor collapse navbar-collapse justify-content-center " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#habitaciones">Habitaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenedor Habitaciones -->
     <section class="container">
         <div id="contenedor-habitaciones" class="row text-center">
             <!-- DOM -->
         </div>
     </section>
 
-    <section class="contaienr">
-        <h1 class="text-center">Carrito de compra</h1>
+    <!-- Carrito de Compras-->
+    <section class="container contenedor-carrito">
+        <h1 class="text-center carrito-titulo">Carrito de compra</h1>
         <div class="row text-center" id="carrito">
 
         </div>
@@ -29,6 +65,52 @@
 
     </section>
 
+        <!-- Footer -->
+        <footer id="footer">
+
+            <div class="container contenedor__footer">
+    
+                <div class="row ">
+    
+                    <div class="text-center">
+                        <img class="img__footer" src="./../imagenes/logo.png" alt="Logo" width="100">
+                    </div>
+    
+    
+    
+                    <div class="d-flex justify-content-center contenedor__telefono">
+                        <div>
+                            <img src="./../imagenes/telefono.png" alt="Telefono" width="90">
+                        </div>
+                        <div class="align-items-center telefono__texto">
+                            <p>Celular:(2342) 560022</p>
+                        </div>
+                    </div>
+    
+                    <div class="d-flex justify-content-center contenedor__ubicacion">
+                        <div>
+                            <img src="./../imagenes/logoUbicacion.png" alt="Ubicacion" width="90">
+                        </div>
+                        <div class="align-items-center">
+                            <p class="ubicacion__texto">Alameda 205 y Calle 302, Villa Gesell</p>
+                        </div>
+                    </div>
+    
+    
+                    <div class="redes d-flex justify-content-center">
+                        <div>
+                            <a href="https://www.facebook.com/HansaHotelVG/" target="_blank"><img src="./../imagenes/facebook.png"
+                                    alt="facebook" width="90"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/hotelhansa/?hl=es-la" target="_blank"><img src="./../imagenes/instagram.png" 
+                                    alt="instagram" width="90"></a>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </footer>
     
 
 
