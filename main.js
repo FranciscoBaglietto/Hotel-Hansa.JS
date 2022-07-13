@@ -112,7 +112,7 @@ function calcularTotal() {
     console.log(total);
 
     const t = document.getElementById("total")
-    t.innerHTML = `<p>${total}</p>`
+    t.innerHTML = `<p>Total de reserva: $${total}</p>`
 
 }
 

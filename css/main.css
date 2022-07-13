@@ -178,8 +178,12 @@
   font-size: 2rem;
   border: 1px black solid;
   width: 20rem; }
-  .contenedor-carrito .carrito-titulo #carrito .card {
-    width: 16rem;
-    margin-bottom: 2rem; }
-    .contenedor-carrito .carrito-titulo #carrito .card .card-img-top {
-      width: 200px; }
+
+.contenedor-carrito #carrito .card {
+  width: 16rem;
+  margin-bottom: 2rem; }
+  .contenedor-carrito #carrito .card .card-img-top {
+    width: 200px; }
+
+.contenedor-carrito #total {
+  font-size: 1.5rem; }
