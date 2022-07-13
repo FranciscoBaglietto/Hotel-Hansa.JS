@@ -6,14 +6,12 @@
 
 const carrito = [];
 
-
-
 function renderizarHabitaciones() {
-    
+
     let tienda = document.getElementById("contenedor-habitaciones");
-    
-    habitaciones.forEach(p =>{
-        
+
+    habitaciones.forEach(p => {
+
         let habitacionHTML = `
         <div>
         <div class= "card">
@@ -39,13 +37,13 @@ function agregarProductoAlCarrito(id) {
 
     let habitacionEnCarrito = carrito.find(hab => hab.id === id);//si hay habitacione en carrito
 
-    if(habitacionEnCarrito){
+    if (habitacionEnCarrito) {
 
         habitacionEnCarrito.cantidad++;
 
         console.log(carrito);
 
-    }else{
+    } else {
         habitacion.cantidad = 1;
         carrito.push(habitacion);
 
@@ -56,13 +54,13 @@ function agregarProductoAlCarrito(id) {
 }
 
 function renderizarCarrito() {
-    
+
     let carritoHTML = document.getElementById("carrito");
     console.log(carritoHTML);
 
     let htmlcarrito = " ";
 
-    carrito.forEach((p, id)=>{
+    carrito.forEach((p, id) => {
 
         htmlcarrito += `
         <div class="d-flex">
@@ -76,22 +74,23 @@ function renderizarCarrito() {
         </div>
         </div>
         `
-        
+
     })
+    calcularTotal()
     carritoHTML.innerHTML = htmlcarrito;
 
 }
 
 function eliminarProductoAlCarrito(id) {
 
-    let habitacionEliminar =  carrito.find((hab) => hab.id === id);
+    let habitacionEliminar = carrito.find((hab) => hab.id === id);
 
     console.log(habitacionEliminar);
 
-    if(habitacionEliminar){
+    if (habitacionEliminar) {
         habitacionEliminar.cantidad--;
-    } 
-
+    }
+        
     renderizarCarrito();
 }
 
@@ -99,12 +98,21 @@ function eliminarProductoAlCarrito(id) {
 function calcularTotal() {
 
     let total = 0;
-    
-    carrito.forEach((p)=>{
+
+    carrito.forEach((p) => {
         total += p.cantidad * p.precio
     })
     console.log(total);
 
     const t = document.getElementById("total")
-    t.innerHTML = <h5>`$${total}`</h5>
+    // t.innerHTML = <p>$ $total </p>
+    
 }
+
+//LocalStorage
+
+const enJSON = JSON.stringify(carrito);//hacemos los objetos en carrito en formato JSON
+
+localStorage.setItem("carrito", enJSON);
+
+
