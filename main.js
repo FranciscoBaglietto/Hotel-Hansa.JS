@@ -49,6 +49,11 @@ function agregarProductoAlCarrito(id) {
 
         console.log(carrito);
     }
+    //LocalStorage
+
+    const enJSON = JSON.stringify(carrito);//hacemos los objetos en carrito en formato JSON
+
+    localStorage.setItem("carrito", enJSON);
 
     renderizarCarrito()
 }
@@ -87,10 +92,12 @@ function eliminarProductoAlCarrito(id) {
 
     console.log(habitacionEliminar);
 
-    if (habitacionEliminar) {
+    if (habitacionEliminar.cantidad > 1) {
         habitacionEliminar.cantidad--;
+    } else {
+        carrito.splice(carrito.indexOf(habitacionEliminar))
     }
-        
+
     renderizarCarrito();
 }
 
@@ -105,14 +112,8 @@ function calcularTotal() {
     console.log(total);
 
     const t = document.getElementById("total")
-    // t.innerHTML = <p>$ $total </p>
-    
+    t.innerHTML = `<p>${total}</p>`
+
 }
-
-//LocalStorage
-
-const enJSON = JSON.stringify(carrito);//hacemos los objetos en carrito en formato JSON
-
-localStorage.setItem("carrito", enJSON);
 
 
