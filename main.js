@@ -46,9 +46,11 @@ function agregarProductoAlCarrito(id) {
     } else {
         habitacion.cantidad = 1;
         carrito.push(habitacion);
-
         console.log(carrito);
     }
+
+
+
     //LocalStorage
 
     const enJSON = JSON.stringify(carrito);//hacemos los objetos en carrito en formato JSON
@@ -92,11 +94,12 @@ function eliminarProductoAlCarrito(id) {
 
     console.log(habitacionEliminar);
 
-    if (habitacionEliminar.cantidad > 1) {
-        habitacionEliminar.cantidad--;
-    } else {
-        carrito.splice(carrito.indexOf(habitacionEliminar))
-    }
+    // if (habitacionEliminar.cantidad > 1) {
+    //     habitacionEliminar.cantidad--;
+    // } else {
+    //     carrito.splice(carrito.indexOf(habitacionEliminar))
+    // }
+    habitacionEliminar.cantidad > 1 ? habitacionEliminar.cantidad-- : carrito.splice(carrito.indexOf(habitacionEliminar));//Operador Avanzado-Ternario
 
     renderizarCarrito();
 }
