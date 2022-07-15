@@ -138,3 +138,12 @@ inputIngreso.addEventListener( "change", () => {
 // Agregando SweetAlert
 
 const btn = document.getElementById("btn-agregar")
+
+btn.addEventListener( "click", () => {
+    swal({
+        title: `Genial`,
+        text: `Tu habitacion se añadio al carrito`,
+        icon: `success`,
+        confirm: `OK`
+    })
+})
