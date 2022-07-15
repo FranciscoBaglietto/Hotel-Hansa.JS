@@ -20,7 +20,7 @@ function renderizarHabitaciones() {
                 <h5 class="card-title">Habitacion ${p.habitacion}</h5>
                 <p>$ ${p.precio}</p>
             </div>
-            <button class="btn btn-primary" onclick="agregarProductoAlCarrito(${p.id})">Añadir al carrito</button>
+            <button id="btn-agregar" class="btn btn-primary" onclick="agregarProductoAlCarrito(${p.id})">Añadir al carrito</button>
         </div>
         </div>
         `
@@ -132,5 +132,9 @@ const inputSalida = document.getElementById("date-salida");
 inputIngreso.addEventListener( "change", () => {
     const ingresoDate = inputIngreso.value; //Para saber el dia que eligio
     
-    
 })
+
+
+// Agregando SweetAlert
+
+const btn = document.getElementById("btn-agregar")
