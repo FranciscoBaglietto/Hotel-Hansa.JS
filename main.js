@@ -120,3 +120,17 @@ function calcularTotal() {
 }
 
 
+// Luxon
+// clases de Bootstrap
+const DateTime = luxon.DateTime;
+const Interval = luxon.Interval;
+
+const inputIngreso = document.getElementById("date-entrada");
+const inputSalida = document.getElementById("date-salida"); 
+
+// escucahar evento change = cuando el usuario elija una fecha especifica escuchamos un cambio en el elemento
+inputIngreso.addEventListener( "change", () => {
+    const ingresoDate = inputIngreso.value; //Para saber el dia que eligio
+    
+    
+})

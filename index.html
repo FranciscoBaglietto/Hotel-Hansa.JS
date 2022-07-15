@@ -62,14 +62,14 @@
 
         <div class="container">
 
-            <form class="row d-flex" >
+            <form class="row d-flex">
                 <div class="col-xl-4">
                     <label for="check-in">Entrada</label>
-                    <input type="date">
+                    <input id="date-entrada" type="date">
                 </div>
                 <div class="col-xl-4">
                     <label for="check-out">Salida</label>
-                    <input type="date">
+                    <input id="date-salida" type="date">
                 </div>
                 <div class="col-xl-2">
                     <label for="check-out">Huesped</label>
@@ -78,9 +78,9 @@
                     <a href="./paginas/habitaciones.html">Buscar</a>
                 </div>
 
-                
+
             </form>
-        </div> 
+        </div>
 
     </section>
 
@@ -336,12 +336,12 @@
 
                 <div class="redes d-flex justify-content-center">
                     <div>
-                        <a href="https://www.facebook.com/HansaHotelVG/" target="_blank"><img src="./imagenes/facebook.png"
-                                alt="facebook" width="90"></a>
+                        <a href="https://www.facebook.com/HansaHotelVG/" target="_blank"><img
+                                src="./imagenes/facebook.png" alt="facebook" width="90"></a>
                     </div>
                     <div>
-                        <a href="https://www.instagram.com/hotelhansa/?hl=es-la" target="_blank"><img src="./imagenes/instagram.png" 
-                                alt="instagram" width="90"></a>
+                        <a href="https://www.instagram.com/hotelhansa/?hl=es-la" target="_blank"><img
+                                src="./imagenes/instagram.png" alt="instagram" width="90"></a>
                     </div>
                 </div>
 
@@ -351,15 +351,17 @@
 
 
 
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-        
+
+    <!-- Luxon -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+
     <!-- JavaScript -->
     <script src="./stock.js"></script>
-    <script src="./main.js"></script>        
+    <script src="./main.js"></script>
 </body>
 
 </html>
