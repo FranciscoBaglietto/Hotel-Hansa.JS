@@ -29,7 +29,7 @@ btnEliminar.addEventListener( "click", () => {
             swal({
                 title:`Borrado`,
                 icon: `success`,
-                text: `La habitacion ha sido borrada con éxito`
+                text: `La habitación ha sido borrada con éxito`
             })
         }
     })
@@ -38,8 +38,8 @@ btnEliminar.addEventListener( "click", () => {
 
 // Luxon
 // clases de Bootstrap
-const DateTime = luxon.DateTime;
-const Interval = luxon.Interval;
+const DateTime = luxon.DateTime();
+const Interval = luxon.Interval();
 
 const inputIngreso = document.getElementById("date-entrada");
 const inputSalida = document.getElementById("date-salida"); 
