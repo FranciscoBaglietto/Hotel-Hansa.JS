@@ -76,7 +76,7 @@ function renderizarCarrito() {
                 <h5 class="card-title"> Habitacion ${p.habitacion}</h5>
                 <p>$ ${p.precio}</p>
                 <p>Cantidad: ${p.cantidad}</p>
-                <button class="btn btn-primary" onclick="eliminarProductoAlCarrito(${p.id})">Eliminar</button>
+                <button id="btn-eliminar" class="btn btn-primary" onclick="eliminarProductoAlCarrito(${p.id})">Eliminar</button>
             </div>
         </div>
         </div>
@@ -120,30 +120,3 @@ function calcularTotal() {
 }
 
 
-// Luxon
-// clases de Bootstrap
-const DateTime = luxon.DateTime;
-const Interval = luxon.Interval;
-
-const inputIngreso = document.getElementById("date-entrada");
-const inputSalida = document.getElementById("date-salida"); 
-
-// escucahar evento change = cuando el usuario elija una fecha especifica escuchamos un cambio en el elemento
-inputIngreso.addEventListener( "change", () => {
-    const ingresoDate = inputIngreso.value; //Para saber el dia que eligio
-    
-})
-
-
-// Agregando SweetAlert
-
-const btn = document.getElementById("btn-agregar")
-
-btn.addEventListener( "click", () => {
-    swal({
-        title: `Genial`,
-        text: `Tu habitacion se añadio al carrito`,
-        icon: `success`,
-        confirm: `OK`
-    })
-})
