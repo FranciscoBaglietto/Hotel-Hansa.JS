@@ -17,7 +17,7 @@ function renderizarHabitaciones() {
         <div class= "card">
             <img src=${p.img} class="card-img-top" alt="Habitacion Doble ">
             <div class="card-body text-center">
-                <h5 class="card-title">Habitacion ${p.habitacion}</h5>
+                <h5 class="card-title">${p.actividad}</h5>
                 <p>$ ${p.precio}</p>
             </div>
             <button id="btn-agregar" class="btn btn-primary" onclick="agregarProductoAlCarrito(${p.id})">Añadir al carrito</button>
@@ -73,7 +73,7 @@ function renderizarCarrito() {
         <div class="d-flex">
         <div class= "card">
             <div class="card-body text-center">
-                <h5 class="card-title"> Habitacion ${p.habitacion}</h5>
+                <h5 class="card-title">${p.actividad}</h5>
                 <p>$ ${p.precio}</p>
                 <p>Cantidad: ${p.cantidad}</p>
                 <button id="btn-eliminar" class="btn btn-primary" onclick="eliminarProductoAlCarrito(${p.id})">Eliminar</button>
@@ -115,7 +115,7 @@ function calcularTotal() {
     console.log(total);
 
     const t = document.getElementById("total")
-    t.innerHTML = `<p>Total de reservas: $${total}</p>`
+    t.innerHTML = `<p>Total: $${total}</p>`
 
 }
 
