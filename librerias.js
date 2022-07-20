@@ -13,7 +13,7 @@ btnAgregar.addEventListener( "click", () => {
         timer: 1000
     })
     
-})
+});
 
 const btnEliminar = document.getElementById("btn-eliminar");
 
@@ -33,7 +33,7 @@ btnEliminar.addEventListener( "click", () => {
             })
         }
     })
-})
+});
 
 
 // Luxon
