@@ -6,7 +6,7 @@ btnAgregar.addEventListener( "click", () => {
     // llamar la libreria con swal
     swal({
         title: `Genial`,
-        text: `Tu habitacion se añadio al carrito`,
+        text: `Tu actividad se añadio al carrito`,
         icon: `success`,
         confirm: `OK`,
         button: false,
