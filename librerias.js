@@ -15,27 +15,6 @@ btnAgregar.addEventListener( "click", () => {
     
 });
 
-const btnEliminar = document.getElementById("btn-eliminar");
-
-btnEliminar.addEventListener( "click", () => {
-    swal({
-        title: `Esta seguro de eliminar Habitacion`,
-        icon: `warning`,
-        button: true,
-        timer: 1000,
-        dangerMode:true
-    }).then( result =>{//para esperar respuesta del usuario
-        if (result) {
-            swal({
-                title:`Borrado`,
-                icon: `success`,
-                text: `La habitación ha sido borrada con éxito`
-            })
-        }
-    })
-});
-
-
 // Luxon
 // clases de Bootstrap
 const DateTime = luxon.DateTime;
@@ -48,7 +27,8 @@ const calcular = document.getElementById("calc");
 // escucahar evento change = cuando el usuario elija una fecha especifica escuchamos un cambio en el elemento
 
 
-calcular.addEventListener("click", (e) => {
+calc.addEventListener("click", (e) => {
+
     e.preventDefault();
 
     const ingreso = dateInput.value;
@@ -70,5 +50,29 @@ const howManyDays = (input, output) => {
     const i = Interval.fromDateTimes(input, output);
 
     return i;
-}
+};
+
+
+const btnEliminar = document.getElementById("btn-eliminar");
+
+btnEliminar.addEventListener( "click", () => {
+    swal({
+        title: `Esta seguro de eliminar Habitacion`,
+        icon: `warning`,
+        button: true,
+        timer: 1000,
+        dangerMode:true
+    }).then( result =>{//para esperar respuesta del usuario
+        if (result) {
+            swal({
+                title:`Borrado`,
+                icon: `success`,
+                text: `La habitación ha sido borrada con éxito`
+            })
+        }
+    })
+});
+
+
+
 
