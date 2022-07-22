@@ -38,38 +38,37 @@ btnEliminar.addEventListener( "click", () => {
 
 // Luxon
 // clases de Bootstrap
-const DateTime = luxon.DateTime();
-const Interval = luxon.Interval();
+const DateTime = luxon.DateTime;
+const Interval = luxon.Interval;
 
-const inputIngreso = document.getElementById("date-entrada");
-const inputSalida = document.getElementById("date-salida"); 
+const dateInput = document.getElementById("date-entrada");
+const dateOutput = document.getElementById("date-salida"); 
+const calcular = document.getElementById("calc");
 
 // escucahar evento change = cuando el usuario elija una fecha especifica escuchamos un cambio en el elemento
-inputIngreso.addEventListener( "change", () => {
-    //Para saber el dia que eligio
-    const fechaEntrada = inputIngreso.value;
-    const fechaEntradaArray = fechaEntrada.split("-");
-    const [ año, mes, dia] = fechaEntradaArray;
 
-    const a = Number(año);
-    const m = Number(mes);
-    const d = Number(dia);
 
-    const interval = cuantosDias(a, m, d);
+calcular.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const ingreso = dateInput.value;
+    const ingresoDate = luxon.DateTime.fromISO(dateInput.value);
+    
+    const egreso = dateOutput.value;
+    const egresoDate = luxon.DateTime.fromISO(dateOutput.value);
+
+    console.log(ingreso, egreso);
+    console.log(ingresoDate);
+
+    const interval = howManyDays(ingresoDate, egresoDate);
+
+    console.log(interval.length("days"));
 
 });
-inputSalida.addEventListener("change", () => {
-    const fechaSalida = inputSalida.value;
 
-})
+const howManyDays = (input, output) => {
+    const i = Interval.fromDateTimes(input, output);
 
-// cuantos dias de una fecha a otra
-const cuantosDias = (año, mes, dias) => {
-    const now = DateTime.now();
-    
-
+    return i;
 }
-
-
-
 
