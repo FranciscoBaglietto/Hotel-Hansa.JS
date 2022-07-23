@@ -1,31 +1,57 @@
-#contenedor-habitaciones{
-    .card{
-        width: 16rem;
-        margin-bottom: 2rem;
-        margin-left: 5rem;
-        .card-img-top{
-            width: 100%;
-        }
-    }
-}
-.contenedor-carrito {
-    
-    .carrito-titulo {
-        font-size: 2rem;
-        border: 1px black solid;
-        width: 20rem;
+.contenedor-actividades {
+    background-color: #ee76840a;
 
-    }
-    #carrito {
+    #contenedor-habitaciones {
+
         .card {
             width: 16rem;
-            margin-bottom: 2rem;
+            margin-left: 7rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
             .card-img-top {
-                width: 200px;
+                width: 100%;
             }
         }
     }
-    #total{
-        font-size: 1.5rem;
+
+    .contenedor-carrito {
+
+        .carrito-titulo {
+
+            border: 1px #818262 solid;
+            width: 20rem;
+            margin-top: 1rem;
+            border-radius: 10px;
+            font-family: karla-regular;
+            font-size: 36px;
+            color: #818262;
+            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.392);
+
+        }
+
+        #carrito {
+            .card {
+                width: 16rem;
+                margin-bottom: 2rem;
+                box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
+                margin: 1rem;
+
+                .card-img-top {
+                    width: 200px;
+                }
+
+            }
+        }
+
+        #total {
+            font-size: 1.5rem;
+            margin: .5rem 1rem;
+            font-family: karla-bold;
+            color: #818262;
+
+        }
     }
+
 }

@@ -24,7 +24,7 @@ const dateInput = document.getElementById("date-entrada");
 const dateOutput = document.getElementById("date-salida"); 
 const calcular = document.getElementById("calc");
 
-// escucahar evento change = cuando el usuario elija una fecha especifica escuchamos un cambio en el elemento
+// escuchar evento change = cuando el usuario elija una fecha especifica escuchamos un cambio en el elemento
 
 
 calc.addEventListener("click", (e) => {
@@ -43,6 +43,9 @@ calc.addEventListener("click", (e) => {
     const interval = howManyDays(ingresoDate, egresoDate);
 
     console.log(interval.length("days"));
+    
+
+
 
 });
 
@@ -62,7 +65,7 @@ btnEliminar.addEventListener( "click", () => {
         button: true,
         timer: 1000,
         dangerMode:true
-    }).then( result =>{//para esperar respuesta del usuario
+    }).then( result =>{//para esperar respuesta del usuarion
         if (result) {
             swal({
                 title:`Borrado`,

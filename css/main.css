@@ -140,7 +140,8 @@
   #trayectoria .contenedor__trayectoria .row .trayectoria__textos {
     flex-direction: column; }
     #trayectoria .contenedor__trayectoria .row .trayectoria__textos .img--trayectoria {
-      width: 30%; }
+      width: 30%;
+      margin-top: 5vh; }
     #trayectoria .contenedor__trayectoria .row .trayectoria__textos .trayectoria--texto1 {
       font-family: karla-regular;
       font-size: 24px;
@@ -167,23 +168,39 @@
     margin-top: 1.9rem;
     margin-left: -1rem; }
 
-#contenedor-habitaciones .card {
-  width: 16rem;
-  margin-bottom: 2rem;
-  margin-left: 5rem; }
-  #contenedor-habitaciones .card .card-img-top {
-    width: 100%; }
+.contenedor-actividades {
+  background-color: #ee76840a; }
+  .contenedor-actividades #contenedor-habitaciones .card {
+    width: 16rem;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    .contenedor-actividades #contenedor-habitaciones .card .card-img-top {
+      width: 100%; }
+  .contenedor-actividades .contenedor-carrito .carrito-titulo {
+    border: 1px #818262 solid;
+    width: 20rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    font-family: karla-regular;
+    font-size: 36px;
+    color: #818262;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.392); }
+  .contenedor-actividades .contenedor-carrito #carrito .card {
+    width: 16rem;
+    margin-bottom: 2rem;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
+    margin: 1rem; }
+    .contenedor-actividades .contenedor-carrito #carrito .card .card-img-top {
+      width: 200px; }
+  .contenedor-actividades .contenedor-carrito #total {
+    font-size: 1.5rem;
+    margin: .5rem 1rem;
+    font-family: karla-bold;
+    color: #818262; }
 
-.contenedor-carrito .carrito-titulo {
-  font-size: 2rem;
-  border: 1px black solid;
-  width: 20rem; }
-
-.contenedor-carrito #carrito .card {
-  width: 16rem;
-  margin-bottom: 2rem; }
-  .contenedor-carrito #carrito .card .card-img-top {
-    width: 200px; }
-
-.contenedor-carrito #total {
-  font-size: 1.5rem; }
+#registro {
+  background-color: #ee76840a; }
+  #registro .container .row .contenedor-ingreso .fechasContenedor {
+    margin: 1rem; }
