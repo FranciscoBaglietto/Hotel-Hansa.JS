@@ -91,10 +91,9 @@ function eliminarProductoAlCarrito(id) {
 
     console.log(habitacionEliminar);
     swal({
-        title: `Esta seguro de eliminar Habitacion`,
+        title: `Esta seguro de eliminar Actividad`,
         icon: `warning`,
         button: true,
-        timer: 1000,
         dangerMode: true,
     }).then((result) => {
         //para esperar respuesta del usuarion
@@ -102,7 +101,8 @@ function eliminarProductoAlCarrito(id) {
             swal({
                 title: `Borrado`,
                 icon: `success`,
-                text: `La habitación ha sido borrada con éxito`,
+                text: `La actividad ha sido borrada con éxito`,
+                timer: 1000,
             });
         }
     });
