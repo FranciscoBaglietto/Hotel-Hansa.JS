@@ -1,5 +1,5 @@
 // llamar a Boton para el HTML Habitaciones
-// const btnBuscar = document.getElementById("myButton").onclick = 
+// const btnBuscar = document.getElementById("myButton").onclick =
 // function () {
 //     location.href= "./paginas/habitaciones.html"
 // }
@@ -7,11 +7,9 @@
 const carrito = [];
 
 function renderizarHabitaciones() {
-
     let tienda = document.getElementById("contenedor-habitaciones");
 
-    habitaciones.forEach(p => {
-
+    habitaciones.forEach((p) => {
         let habitacionHTML = `
         <div>
         <div class= "card">
@@ -23,52 +21,54 @@ function renderizarHabitaciones() {
             <button id="btn-agregar" class="btn btn-primary" onclick="agregarProductoAlCarrito(${p.id})">Añadir al carrito</button>
         </div>
         </div>
-        `
+        `;
         tienda.innerHTML += habitacionHTML;
-    })
-
-};
+    });
+}
 
 renderizarHabitaciones();
 
 function agregarProductoAlCarrito(id) {
+    let habitacion = habitaciones.find((hab) => hab.id === id);
 
-    let habitacion = habitaciones.find(hab => hab.id === id);
-
-    let habitacionEnCarrito = carrito.find(hab => hab.id === id);//si hay habitacione en carrito
+    let habitacionEnCarrito = carrito.find((hab) => hab.id === id); //si hay habitacione en carrito
 
     if (habitacionEnCarrito) {
-
         habitacionEnCarrito.cantidad++;
 
         console.log(carrito);
-
     } else {
         habitacion.cantidad = 1;
         carrito.push(habitacion);
         console.log(carrito);
     }
 
-
-
+    const btnAgregar = document.getElementById("btn-agregar");
+    // llamar la libreria con swal
+    swal({
+        title: `Genial`,
+        text: `Tu actividad se añadio al carrito`,
+        icon: `success`,
+        confirm: `OK`,
+        button: false,
+        timer: 1000,
+    });
     //LocalStorage
 
-    const enJSON = JSON.stringify(carrito);//hacemos los objetos en carrito en formato JSON
+    const enJSON = JSON.stringify(carrito); //hacemos los objetos en carrito en formato JSON
 
     localStorage.setItem("carrito", enJSON);
 
-    renderizarCarrito()
+    renderizarCarrito();
 }
 
 function renderizarCarrito() {
-
     let carritoHTML = document.getElementById("carrito");
     console.log(carritoHTML);
 
     let htmlcarrito = " ";
 
     carrito.forEach((p, id) => {
-
         htmlcarrito += `
         <div class="d-flex">
         <div class= "card">
@@ -80,43 +80,52 @@ function renderizarCarrito() {
             </div>
         </div>
         </div>
-        `
-
-    })
-    calcularTotal()
+        `;
+    });
+    calcularTotal();
     carritoHTML.innerHTML = htmlcarrito;
-
 }
 
 function eliminarProductoAlCarrito(id) {
-
     let habitacionEliminar = carrito.find((hab) => hab.id === id);
 
     console.log(habitacionEliminar);
-
+    swal({
+        title: `Esta seguro de eliminar Habitacion`,
+        icon: `warning`,
+        button: true,
+        timer: 1000,
+        dangerMode: true,
+    }).then((result) => {
+        //para esperar respuesta del usuarion
+        if (result) {
+            swal({
+                title: `Borrado`,
+                icon: `success`,
+                text: `La habitación ha sido borrada con éxito`,
+            });
+        }
+    });
     // if (habitacionEliminar.cantidad > 1) {
     //     habitacionEliminar.cantidad--;
     // } else {
     //     carrito.splice(carrito.indexOf(habitacionEliminar))
     // }
-    habitacionEliminar.cantidad > 1 ? habitacionEliminar.cantidad-- : carrito.splice(carrito.indexOf(habitacionEliminar));//Operador Avanzado-Ternario
+    habitacionEliminar.cantidad > 1
+        ? habitacionEliminar.cantidad--
+        : carrito.splice(carrito.indexOf(habitacionEliminar)); //Operador Avanzado-Ternario
 
     renderizarCarrito();
 }
 
-
 function calcularTotal() {
-
     let total = 0;
 
     carrito.forEach((p) => {
-        total += p.cantidad * p.precio
-    })
+        total += p.cantidad * p.precio;
+    });
     console.log(total);
 
-    const t = document.getElementById("total")
-    t.innerHTML = `<p>Total: $${total}</p>`
-
+    const t = document.getElementById("total");
+    t.innerHTML = `<p>Total: $${total}</p>`;
 }
-
-
