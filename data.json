@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "actividad": "Desayuno", 
+        "precio": 100,
+        "img": "./../imagenes/desayuno1.jpeg",
+        "cantidad": ""
+    },
+    {
+        "id": 2,
+        "actividad": "Recorrido Villa Gesell", 
+        "precio": 200,
+        "img": "./../imagenes/villagesell.webp",
+        "cantidad": ""
+    }
+]

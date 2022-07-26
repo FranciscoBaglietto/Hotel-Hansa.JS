@@ -13,5 +13,5 @@ const habitaciones = [
         img: `./../imagenes/villagesell.webp`,
         cantidad: ""
     },
-
+    
 ];

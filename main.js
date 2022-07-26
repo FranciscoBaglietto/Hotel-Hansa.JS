@@ -6,6 +6,7 @@
 
 const carrito = [];
 
+
 function renderizarHabitaciones() {
     let tienda = document.getElementById("contenedor-habitaciones");
 
