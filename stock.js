@@ -1,4 +1,4 @@
-const habitaciones = [
+const actividades = [
     {
         id: 1,
         actividad: "Desayuno",  //objeto1

@@ -37,3 +37,25 @@ const howManyDays = (input, output) => {
 
     return i;
 };
+
+
+const habitaciones = [
+    {id: 1, habitacion: "Simple", precio: 100},
+    {id: 2, habitacion: "Doble", precio: 200},
+    {id: 3, habitacion: "Triple", precio: 300},
+];
+
+
+const rederizarCamas = () => {
+    let elegirCamas = document.getElementById("camas");
+
+    habitaciones.forEach( (p) =>{
+        let camasHTML =`
+        <option>${p.habitacion}</option>
+        `
+        elegirCamas.innerHTML += camasHTML
+    })
+}
+
+rederizarCamas();
+

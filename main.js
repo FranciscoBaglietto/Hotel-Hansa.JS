@@ -45,7 +45,7 @@ renderizarHabitaciones()
 
 
 function agregarProductoAlCarrito(id) {
-    let habitacion = habitaciones.find((hab) => hab.id === id);
+    let habitacion = actividades.find((hab) => hab.id === id);
 
     let habitacionEnCarrito = carrito.find((hab) => hab.id === id); //si hay habitacione en carrito
 
