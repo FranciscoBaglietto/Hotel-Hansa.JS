@@ -1,5 +1,5 @@
 
-// guardado een localSotaraje
+// guardado en localSotaraje
 const datosCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 const carrito = datosCarrito || []

@@ -22,17 +22,24 @@ calc.addEventListener("click", (e) => {
 
     const interval = howManyDays(ingresoDate, egresoDate);
 
+
     let estadia = interval.length("days");
+
+    let precio = document.getElementById("camas").value;
+
+    const total = estadia * precio;
+
     swal({
         title: `Genial`,
-        text: `Su reservacion por ${estadia} días se realizó con éxito`,
+        text: `Su reservacion por ${estadia} días se realizó con éxito. 
+        Total a pagar: $ ${total}`,
         icon: `success`,
         confirm: `OK`,
-        
     });
 
-    
 });
+
+
 
 const howManyDays = (input, output) => {
     const i = Interval.fromDateTimes(input, output);
@@ -53,7 +60,7 @@ const rederizarCamas = () => {
 
     habitaciones.forEach((p) =>{
         let camasHTML =`
-        <option>${p.habitacion}</option>
+        <option value=${p.precio}>${p.habitacion}</option>
         `
         elegirCamas.innerHTML += camasHTML
     })
