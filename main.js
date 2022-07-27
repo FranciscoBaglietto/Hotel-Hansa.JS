@@ -1,16 +1,16 @@
-// llamar a Boton para el HTML Habitaciones
-// const btnBuscar = document.getElementById("myButton").onclick =
-// function () {
-//     location.href= "./paginas/habitaciones.html"
-// }
-
 const carrito = [];
 
+fetch( "/data.json" )
+        .then( (response) => response.json() )
+        .then( (data) => {
+            renderizarHabitaciones(data)
+        })
 
-function renderizarHabitaciones() {
+
+function renderizarHabitaciones(data) {
     let tienda = document.getElementById("contenedor-habitaciones");
 
-    habitaciones.forEach((p) => {
+    data.forEach((p) => {
         let habitacionHTML = `
         <div>
         <div class= "card">
@@ -27,7 +27,7 @@ function renderizarHabitaciones() {
     });
 }
 
-renderizarHabitaciones();
+renderizarHabitaciones()
 
 function agregarProductoAlCarrito(id) {
     let habitacion = habitaciones.find((hab) => hab.id === id);
