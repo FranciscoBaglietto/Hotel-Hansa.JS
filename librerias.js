@@ -25,11 +25,10 @@ calc.addEventListener("click", (e) => {
     let estadia = interval.length("days");
     swal({
         title: `Genial`,
-        text: `Su reserva por ${estadia} días se realizó con éxito`,
+        text: `Su reservacion por ${estadia} días se realizó con éxito`,
         icon: `success`,
         confirm: `OK`,
-        button: false,
-        timer: 1000,
+        
     });
 });
 

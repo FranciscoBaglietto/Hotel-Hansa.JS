@@ -1,14 +1,28 @@
 const carrito = [];
 
-fetch( "/data.json" )
-        .then( (response) => response.json() )
-        .then( (data) => {
-            renderizarHabitaciones(data)
-        })
+
+// Fetch
+const API = "../data.json"  
+
+const getData = async () => {
+    try {
+        const response = await fetch (API);
+        const data = await response.json();
+    
+        return data;
+        
+    } catch (error) {
+        console.log("Hubo un error en la petición", error)
+    }
+    
+} 
 
 
-function renderizarHabitaciones(data) {
+const renderizarHabitaciones = async () => {
     let tienda = document.getElementById("contenedor-habitaciones");
+
+    const data = await getData();
+
 
     data.forEach((p) => {
         let habitacionHTML = `
@@ -28,6 +42,7 @@ function renderizarHabitaciones(data) {
 }
 
 renderizarHabitaciones()
+
 
 function agregarProductoAlCarrito(id) {
     let habitacion = habitaciones.find((hab) => hab.id === id);
@@ -60,7 +75,9 @@ function agregarProductoAlCarrito(id) {
 
     localStorage.setItem("carrito", enJSON);
 
+
     renderizarCarrito();
+
 }
 
 function renderizarCarrito() {
@@ -92,7 +109,7 @@ function eliminarProductoAlCarrito(id) {
 
     console.log(habitacionEliminar);
     swal({
-        title: `Esta seguro de eliminar Actividad`,
+        title: `¿Estas seguro de eliminar Actividad?`,
         icon: `warning`,
         button: true,
         dangerMode: true,
@@ -107,11 +124,7 @@ function eliminarProductoAlCarrito(id) {
             });
         }
     });
-    // if (habitacionEliminar.cantidad > 1) {
-    //     habitacionEliminar.cantidad--;
-    // } else {
-    //     carrito.splice(carrito.indexOf(habitacionEliminar))
-    // }
+
     habitacionEliminar.cantidad > 1
         ? habitacionEliminar.cantidad--
         : carrito.splice(carrito.indexOf(habitacionEliminar)); //Operador Avanzado-Ternario
