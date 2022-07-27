@@ -30,6 +30,8 @@ calc.addEventListener("click", (e) => {
         confirm: `OK`,
         
     });
+
+    
 });
 
 const howManyDays = (input, output) => {

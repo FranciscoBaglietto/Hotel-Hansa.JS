@@ -1,4 +1,9 @@
-const carrito = [];
+
+// guardado een localSotaraje
+const datosCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+const carrito = datosCarrito || []
+
 
 
 // Fetch
@@ -16,7 +21,6 @@ const getData = async () => {
     }
     
 } 
-
 
 const renderizarHabitaciones = async () => {
     let tienda = document.getElementById("contenedor-habitaciones");
