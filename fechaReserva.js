@@ -40,16 +40,16 @@ const howManyDays = (input, output) => {
 
 
 const habitaciones = [
-    {id: 1, habitacion: "Simple", precio: 100},
-    {id: 2, habitacion: "Doble", precio: 200},
-    {id: 3, habitacion: "Triple", precio: 300},
+    {id: 1, habitacion: "Simple $100", precio: 100},
+    {id: 2, habitacion: "Doble $200", precio: 200},
+    {id: 3, habitacion: "Triple $300", precio: 300},
 ];
 
 
 const rederizarCamas = () => {
     let elegirCamas = document.getElementById("camas");
 
-    habitaciones.forEach( (p) =>{
+    habitaciones.forEach((p) =>{
         let camasHTML =`
         <option>${p.habitacion}</option>
         `
