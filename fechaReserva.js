@@ -1,6 +1,6 @@
-// Luxon
-// clases de Bootstrap
+const datosTotal = JSON.parse(localStorage.getItem("totalReserva"));
 
+// Luxon
 const DateTime = luxon.DateTime;
 const Interval = luxon.Interval;
 
@@ -26,8 +26,12 @@ calc.addEventListener("click", (e) => {
     let estadia = interval.length("days");
 
     let precio = document.getElementById("camas").value;
-
+    
     const total = estadia * precio;
+
+    const totalJSON = JSON.stringify(total);
+    localStorage.setItem("totalReserva", totalJSON);
+
 
     swal({
         title: `Genial`,

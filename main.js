@@ -73,12 +73,12 @@ function agregarProductoAlCarrito(id) {
         button: false,
         timer: 1000,
     });
+
     //LocalStorage
 
     const enJSON = JSON.stringify(carrito); //hacemos los objetos en carrito en formato JSON
 
     localStorage.setItem("carrito", enJSON);
-
 
     renderizarCarrito();
 
@@ -113,10 +113,11 @@ function eliminarProductoAlCarrito(id) {
     let habitacionEliminar = carrito.find((hab) => hab.id === id);
 
     console.log(habitacionEliminar);
+
     swal({
         title: `¿Estas seguro de eliminar Actividad?`,
         icon: `warning`,
-        button: true,
+        buttons: true,
         dangerMode: true,
     }).then((result) => {
         //para esperar respuesta del usuarion
@@ -134,6 +135,7 @@ function eliminarProductoAlCarrito(id) {
         ? habitacionEliminar.cantidad--
         : carrito.splice(carrito.indexOf(habitacionEliminar)); //Operador Avanzado-Ternario
 
+    localStorage.clear(carrito)
     
     renderizarCarrito();
 }
