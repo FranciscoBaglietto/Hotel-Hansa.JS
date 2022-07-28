@@ -1,19 +1,41 @@
-#registro{
+#registro {
     background-color: #ee76840a;
 
-    .container{
+    .container {
 
-        .row{
+        .contenedor-ingreso {
 
-            .contenedor-ingreso{
+            .fechasContenedor {
+                margin: 1.5rem 2rem;
+            }
+            .btn-calcular{
+                transition: transform 1s;
+            }
+            .btn-calcular{
+                transform: scale(1.05);
+            }
+        }
+        .registroContenedor{
+            margin-top: 1rem;
+            margin-left: 10rem;
 
-                .fechasContenedor{
-                    margin: 1rem;
-                }
-
+            .tituloRegistro{
+                    font-family: karla-regular;
+                    font-size: 24px;
+                    color: #818262;
             }
 
+            .btn-enviar{
+                margin-top: .5rem;
+                transition: transform 1s;
+            }
+            .btn-enviar:hover{
+                transform: scale(1.05);
+            }
 
         }
+
+
+
     }
 }

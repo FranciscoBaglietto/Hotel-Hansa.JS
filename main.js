@@ -7,20 +7,20 @@ const carrito = datosCarrito || []
 
 
 // Fetch
-const API = "../data.json"  
+const API = "../data.json"
 
 const getData = async () => {
     try {
-        const response = await fetch (API);
+        const response = await fetch(API);
         const data = await response.json();
-    
+
         return data;
-        
+
     } catch (error) {
         console.log("Hubo un error en la petición", error)
     }
-    
-} 
+
+}
 
 const renderizarHabitaciones = async () => {
     let tienda = document.getElementById("contenedor-habitaciones");
@@ -108,6 +108,7 @@ function renderizarCarrito() {
     carritoHTML.innerHTML = htmlcarrito;
 }
 
+
 function eliminarProductoAlCarrito(id) {
     let habitacionEliminar = carrito.find((hab) => hab.id === id);
 
@@ -133,8 +134,11 @@ function eliminarProductoAlCarrito(id) {
         ? habitacionEliminar.cantidad--
         : carrito.splice(carrito.indexOf(habitacionEliminar)); //Operador Avanzado-Ternario
 
+    
     renderizarCarrito();
 }
+
+
 
 function calcularTotal() {
     let total = 0;

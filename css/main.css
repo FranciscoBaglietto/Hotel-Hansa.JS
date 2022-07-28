@@ -37,7 +37,10 @@
       font-size: 24px;
       margin: 0 10px;
       font-family: karla-regular;
-      text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568); }
+      text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
+      transition: transform 1s; }
+    .header .navbar .container-fluid .navbar_contenedor .navbar-nav .nav-item .nav-link:hover {
+      transform: scale(1.1); }
 
 #home img {
   object-fit: cover;
@@ -71,16 +74,25 @@
       box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
       border-radius: 4px;
       width: 50%;
-      margin-bottom: 6px; }
+      margin-bottom: 6px;
+      transition: transform 1s; }
+    #bienvenidos .contenedor_bienvenido .row .grid-container .img__1:hover {
+      transform: scale(1.05); }
     #bienvenidos .contenedor_bienvenido .row .grid-container .img__2 {
       box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
       border-radius: 4px;
-      width: 77%; }
+      width: 77%;
+      transition: transform 1s; }
+    #bienvenidos .contenedor_bienvenido .row .grid-container .img__2:hover {
+      transform: scale(1.05); }
     #bienvenidos .contenedor_bienvenido .row .grid-container .img__3 {
       grid-row: 1fr;
       box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
       border-radius: 4px;
-      width: 50%; }
+      width: 50%;
+      transition: transform 1s; }
+    #bienvenidos .contenedor_bienvenido .row .grid-container .img__3:hover {
+      transform: scale(1.05); }
 
 #servicios {
   background-color: #ee76840a;
@@ -202,5 +214,21 @@
 
 #registro {
   background-color: #ee76840a; }
-  #registro .container .row .contenedor-ingreso .fechasContenedor {
-    margin: 1rem; }
+  #registro .container .contenedor-ingreso .fechasContenedor {
+    margin: 1.5rem 2rem; }
+  #registro .container .contenedor-ingreso .btn-calcular {
+    transition: transform 1s; }
+  #registro .container .contenedor-ingreso .btn-calcular {
+    transform: scale(1.05); }
+  #registro .container .registroContenedor {
+    margin-top: 1rem;
+    margin-left: 10rem; }
+    #registro .container .registroContenedor .tituloRegistro {
+      font-family: karla-regular;
+      font-size: 24px;
+      color: #818262; }
+    #registro .container .registroContenedor .btn-enviar {
+      margin-top: .5rem;
+      transition: transform 1s; }
+    #registro .container .registroContenedor .btn-enviar:hover {
+      transform: scale(1.05); }
