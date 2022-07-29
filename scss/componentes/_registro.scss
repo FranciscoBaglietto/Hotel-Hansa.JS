@@ -8,6 +8,7 @@
             margin: 4rem 4rem;
             border: 1px black solid;
             border-radius: 10px;
+            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
 
             .fechasContenedor {
                 margin: 1.5rem 2rem;
@@ -16,6 +17,7 @@
             .btn-calcular {
                 transition: transform 1s;
                 background: #818262;
+                box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
             }
 
             .btn-calcular:hover {
@@ -28,6 +30,7 @@
             margin: 4rem 4rem;
             border: 1px black solid;
             border-radius: 10px;
+            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
 
 
             .contenedorDatos {
@@ -51,6 +54,7 @@
                 transition: transform 1s;
                 background: #818262;
                 margin-bottom: 16px;
+                box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
             }
 
             .btn-enviar:hover {
