@@ -34,8 +34,8 @@ const renderizarHabitaciones = async () => {
         <div class= "card">
             <img src=${p.img} class="card-img-top" alt="Habitacion Doble ">
             <div class="card-body text-center">
-                <h5 class="card-title">${p.actividad}</h5>
-                <p>$ ${p.precio}</p>
+                <h5 class="card-title-carrito">${p.actividad}</h5>
+                <p class="card-precio-carrito">$ ${p.precio}</p>
             </div>
             <button id="btn-agregar" class="btn btn-primary" onclick="agregarProductoAlCarrito(${p.id})">Añadir al carrito</button>
         </div>
@@ -95,9 +95,9 @@ function renderizarCarrito() {
         <div class="d-flex">
         <div class= "card">
             <div class="card-body text-center">
-                <h5 class="card-title">${p.actividad}</h5>
-                <p>$ ${p.precio}</p>
-                <p>Cantidad: ${p.cantidad}</p>
+                <h5 class="card-title-carrito">${p.actividad}</h5>
+                <p class="card-precio-carrito">$ ${p.precio}</p>
+                <p class="card-cantidad-carrito">Cantidad: ${p.cantidad}</p>
                 <button id="btn-eliminar" class="btn btn-primary" onclick="eliminarProductoAlCarrito(${p.id})">Eliminar</button>
             </div>
         </div>
@@ -135,11 +135,9 @@ function eliminarProductoAlCarrito(id) {
         ? habitacionEliminar.cantidad--
         : carrito.splice(carrito.indexOf(habitacionEliminar)); //Operador Avanzado-Ternario
 
-    localStorage.clear(carrito)
-    
+
     renderizarCarrito();
 }
-
 
 
 function calcularTotal() {

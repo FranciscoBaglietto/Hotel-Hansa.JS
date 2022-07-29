@@ -4,32 +4,56 @@
     .container {
 
         .contenedor-ingreso {
+            background-color: #8182627c;
+            margin: 4rem 4rem;
+            border: 1px black solid;
+            border-radius: 10px;
 
             .fechasContenedor {
                 margin: 1.5rem 2rem;
             }
-            .btn-calcular{
+
+            .btn-calcular {
                 transition: transform 1s;
+                background: #818262;
             }
-            .btn-calcular{
+
+            .btn-calcular:hover {
                 transform: scale(1.05);
             }
         }
-        .registroContenedor{
-            margin-top: 1rem;
-            margin-left: 10rem;
 
-            .tituloRegistro{
-                    font-family: karla-regular;
-                    font-size: 24px;
-                    color: #818262;
+        .registroContenedor {
+            background-color: #8182627c;
+            margin: 4rem 4rem;
+            border: 1px black solid;
+            border-radius: 10px;
+
+
+            .contenedorDatos {
+                margin-left: 5rem;
+
+                .input-registro {
+                    margin-bottom: 5px;
+                }
             }
 
-            .btn-enviar{
+            .tituloRegistro {
+                font-family: karla-regular;
+                font-size: 24px;
+                color: #818262;
+
+
+            }
+
+            .btn-enviar {
                 margin-top: .5rem;
                 transition: transform 1s;
+                background: #818262;
+                margin-bottom: 16px;
             }
-            .btn-enviar:hover{
+
+            .btn-enviar:hover {
                 transform: scale(1.05);
             }
 

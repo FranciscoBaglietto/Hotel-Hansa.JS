@@ -8,9 +8,21 @@
             margin-left: 7rem;
             margin-top: 1rem;
             margin-bottom: 1rem;
+            color: #818262;;
 
             .card-img-top {
                 width: 100%;
+            }
+            .card-title-carrito{
+                font-family: karla-regular;
+                font-size: 1.5rem;
+            }
+            .card-precio-carrito{
+                font-family: karla-bold;
+                font-size: 1.3rem;
+            }
+            #btn-agregar{
+                background: #818262;
             }
         }
     }
@@ -32,14 +44,34 @@
         }
 
         #carrito {
+
             .card {
                 width: 16rem;
                 margin-bottom: 2rem;
                 box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
                 margin: 1rem;
 
-                .card-img-top {
-                    width: 200px;
+                .card-body {
+
+                    .card-title-carrito {
+                        font-family: karla-regular;
+                        font-size: 24px;
+                        color: #818262;
+                    }
+                    .card-precio-carrito{
+                        font-family: karla-bold;
+                        font-size: 1.3rem;
+                        color: #818262;
+                    }
+                    .card-cantidad-carrito{
+                        font-family: karla-regular;
+                        font-size: 1.2rem;
+                        color: #818262;
+                    }
+                    #btn-eliminar{
+                        background: #818262;
+                    }
+
                 }
 
             }
