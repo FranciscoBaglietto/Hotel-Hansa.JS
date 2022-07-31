@@ -23,6 +23,7 @@ const getData = async () => {
 }
 
 const renderizarHabitaciones = async () => {
+    
     let tienda = document.getElementById("contenedor-habitaciones");
 
     const data = await getData();
@@ -46,7 +47,6 @@ const renderizarHabitaciones = async () => {
 }
 
 renderizarHabitaciones()
-
 
 const agregarProductoAlCarrito = async (id) => {
 
