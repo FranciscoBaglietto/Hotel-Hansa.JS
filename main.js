@@ -48,8 +48,11 @@ const renderizarHabitaciones = async () => {
 renderizarHabitaciones()
 
 
-function agregarProductoAlCarrito(id) {
-    let habitacion = actividades.find((hab) => hab.id === id);
+const agregarProductoAlCarrito = async (id) => {
+
+    const data = await getData();
+
+    let habitacion = data.find((hab) => hab.id === id);
 
     let habitacionEnCarrito = carrito.find((hab) => hab.id === id); //si hay habitacione en carrito
 
