@@ -21,6 +21,8 @@
 
             .fechasContenedor {
                 margin: 1.5rem 2rem;
+                display: flex;
+                flex-direction: column;
             }
 
             .btn-calcular {
@@ -45,9 +47,12 @@
             .contenedorDatos {
                 margin-left: 4rem;
                 margin-bottom: 1rem;
+                display: flex;
+                flex-direction: column;
 
                 .input-registro {
                     margin-bottom: 5px;
+                    width: fit-content;
                 }
             }
 
@@ -63,7 +68,9 @@
                 transition: transform 1s;
                 background: #818262;
                 margin-bottom: 16px;
+                margin-right: 3rem;
                 box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.568);
+                
             }
 
             .btn-enviar:hover {

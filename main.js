@@ -38,7 +38,7 @@ const renderizarHabitaciones = async () => {
                 <h5 class="card-title-carrito">${p.actividad}</h5>
                 <p class="card-precio-carrito">$ ${p.precio}</p>
             </div>
-            <button id="btn-agregar" class="btn btn-primary" onclick="agregarProductoAlCarrito(${p.id})">Añadir al carrito</button>
+            <button id="btn-agregar" class="btn btn-secondary" onclick="agregarProductoAlCarrito(${p.id})">Añadir al carrito</button>
         </div>
         </div>
         `;
@@ -101,7 +101,7 @@ function renderizarCarrito() {
                 <h5 class="card-title-carrito">${p.actividad}</h5>
                 <p class="card-precio-carrito">$ ${p.precio}</p>
                 <p class="card-cantidad-carrito">Cantidad: ${p.cantidad}</p>
-                <button id="btn-eliminar" class="btn btn-primary" onclick="eliminarProductoAlCarrito(${p.id})">Eliminar</button>
+                <button id="btn-eliminar" class="btn btn-secondary" onclick="eliminarProductoAlCarrito(${p.id})">Eliminar</button>
             </div>
         </div>
         </div>
